@@ -12,5 +12,5 @@
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
     echo "<script>alert('Inscripcion realizada exitosamente')</script>";
-    echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
+    echo "<script>setTimeout(\"https://luchiscreaciones.github.io/'\",1000)</script>";
 ?>
