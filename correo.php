@@ -5,7 +5,15 @@
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nAsunto: " . $mensaje;
-    mail($destino, "Inscripcion", $contenido);
-    header("<script>alert('Inscripcion realizada exitosamente')</script>");
+    $mail = @mail($destino, "Inscripcion", $contenido);
+    if($mail)
+    {
+        echo "<script>Incripcion realizada correctamente</script>";
+    }
+    else
+    {
+        echo "<script>Error en la inscripcion</script>";
+    }
+
 //Esto es opcional, aqui pueden colocar un mensaje de "enviado correctamente" o redireccionarlo a algun lugar
 ?>
