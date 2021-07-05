@@ -13,6 +13,4 @@
 
     echo "<script>alert('Inscripcion realizada exitosamente')</script>";
     echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
-
-
 ?>
