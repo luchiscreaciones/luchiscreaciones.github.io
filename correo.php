@@ -7,14 +7,14 @@ if(isset($_POST['enviar'])){
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nAsunto: " . $mensaje;
-    $mail = @mail($destino,$asunto,$mensaje);
+    $mail = mail($destino,$asunto,$mensaje);
     if($mail)
     {
-        header("Location: index.html");
+        echo'<script type="text/javascript">alert("Inscripcion correcta");window.location.href="index.html";</script>';
     }
     else
     {
-        echo "<script>Error en la inscripcion</script>";
+        echo'<script type="text/javascript">alert("Error en la inscripcion");window.location.href="index.html";</script>';
     }
 }
  

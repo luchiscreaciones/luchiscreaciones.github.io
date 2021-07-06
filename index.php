@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>LuchisCreaciones</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
       <!-- Barra de navegacion -->
       <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
         <div class="container-fluid">
-          <img src="/imagenes/logo.jpg" alt="" width="50" height="30" class="d-inline-block align-text-top">
+          <img src="imagenes/logo.jpg" alt="" width="50" height="30" class="d-inline-block align-text-top">
           <a class="navbar-brand fs-5 fw-bold"><strong class="tittle"><span class="primary">LuchisCreaciones</span></strong></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,13 +44,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/imagenes/imagen1.jpg" class="d-block w-100" alt="imagen1">
+              <img src="imagenes/imagen1.jpg" class="d-block w-100" alt="imagen1">
             </div>
             <div class="carousel-item">
-              <img src="/imagenes/imagen2.jpg" class="d-block w-100" alt="imagen2">
+              <img src="imagenes/imagen2.jpg" class="d-block w-100" alt="imagen2">
             </div>
             <div class="carousel-item">
-              <img src="/imagenes/imagen3.jpg" class="d-block w-100" alt="imagen3">
+              <img src="imagenes/imagen3.jpg" class="d-block w-100" alt="imagen3">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -74,7 +74,7 @@
           <div class="row">
             <div class="col-12 col-lg-6 mb-3">
               <div class="card w-100" style="width: 18rem;">
-                <img src="/imagenes/perfil.jpg" class="card-img-top" alt="perfil">
+                <img src="imagenes/perfil.jpg" class="card-img-top" alt="perfil">
                 <div class="card-body">
                   <p class="card-text fs-5" id="titulo"><strong class="tittle"> Soy Luz Emilt Chavez Hernández y te enseñaré a explotar tu creatividad.</strong></p>
                 </div>
@@ -197,5 +197,8 @@
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js"></script>
+    <?php
+    include("correo.php");
+    ?>
   </body>
 </html>
