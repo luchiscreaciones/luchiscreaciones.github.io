@@ -157,16 +157,16 @@
             <form action="correo.php" method="POST" >
               
                   <div class="mb-3">            
-                    <input type="input" class="form-control" id="nombre" placeholder="Adrian Sanchez" required>
+                    <input type="input" class="form-control" name="nombre" placeholder="Adrian Sanchez" required>
                   </div>
                   <div class= "mb-3">           
-                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    <input type="email" class="form-control" name="email" placeholder="nombre@ejemplo.com" required>
                   </div>
                   <div class="mb-3">
-                    <textarea class="form-control" id="mensaje" placeholder="Envianos un mensaje (Opcional)" rows="3"></textarea>
+                    <textarea class="form-control" name="mensaje" placeholder="Envianos un mensaje (Opcional)" rows="3"></textarea>
                   </div>
                 <div class="mb-3">
-                  <input type="submit" class=" btn btn-primary w-100 fs-5 m-1" value="Enviar inscripción">
+                  <input type="submit" class="btn btn-primary w-100 fs-5 m-1" name="enviar" value="Enviar inscripción">
                 </div>
             </form>
         </div>
