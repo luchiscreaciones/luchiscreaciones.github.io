@@ -3,13 +3,14 @@
 if(isset($_POST['enviar'])){
     $destino = "brianalvarez2000@gmail.com";
     $nombre = $_POST["nombre"];
+    $asunto = "Inscripcion al cruso";
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nAsunto: " . $mensaje;
-    $mail = @mail($destino, "Inscripcion", $contenido);
+    $mail = @mail($destino,$asunto,$mensaje);
     if($mail)
     {
-        echo "<script>Incripcion realizada correctamente</script>";
+        header("Location: index.html");
     }
     else
     {
